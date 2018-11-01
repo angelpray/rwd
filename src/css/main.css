@@ -160,6 +160,22 @@ header .top ul li a {
     color: #fff;
 }
 
+@media only screen and (max-width: 50em) {
+    header .top ul li a {
+        padding: 0 1rem;
+    }
+}
+
+/* @media only screen and (min-width: 30.0625em) and (max-width: 50em) {} */
+
+@media only screen and (max-width: 30em) {
+
+    header .top .tel,
+    header .top ul li:nth-last-child(-n+2) {
+        display: none;
+    }
+}
+
 /* 主导航 */
 header .main {
     padding: 0;
@@ -194,6 +210,45 @@ header .main ul li a:active,
 header .main ul li a.active {
     color: #ffb300;
     background-color: #f8f6f1;
+}
+
+@media only screen and (max-width: 50em) {
+
+    header .main .brand {
+        float: none;
+        display: block;
+        padding: 0;
+        margin: 1.5rem auto 0.5rem;
+        text-align: center;
+    }
+
+    header .main ul {
+        text-align: center;
+    }
+
+    header .main ul li {
+        border: none;
+    }
+
+    header .main ul li a {
+        padding: 0 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+
+    header .main ul li {
+        line-height: 3rem;
+    }
+
+    header .main ul li:first-child {
+        display: none;
+    }
+
+    header .main ul li a {
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
 }
 
 /* 网站主要内容 */
@@ -248,6 +303,48 @@ header .main ul li a.active {
     color: #fff;
 }
 
+@media only screen and (max-width: 50em) {
+
+    .trans-data {
+        padding: 1rem 0.5rem;
+    }
+
+    .trans-data span {
+        font-size: 1.2rem;
+    }
+
+    .trans-data span.trans-money {
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0;
+        letter-spacing: inherit;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .trans-report a {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+
+    .transaction {
+        padding: 0.5rem 0;
+    }
+
+    .trans-data,
+    .trans-report {
+        float: none;
+        text-align: center;
+    }
+
+    .trans-data,
+    .trans-report a {
+        padding: 0;
+    }
+}
+
 /* 广告 */
 .ad {
     display: none;
@@ -293,6 +390,38 @@ header .main ul li a.active {
     color: #999;
 }
 
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
+
+    .feature .item h3,
+    .feature .item p {
+        display: block;
+        width: 100%;
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .feature .item p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+
+    .feature {
+        width: 96%;
+        margin: 1rem auto;
+    }
+
+    .feature .item {
+        display: block;
+        width: auto;
+    }
+
+    .feature .item+.item {
+        margin: 1rem 0 0;
+    }
+}
+
 /* 最新公告 */
 
 .notice {
@@ -334,6 +463,23 @@ header .main ul li a.active {
     width: auto;
     margin-right: 2rem;
     color: #ff9900;
+}
+
+@media only screen and (max-width: 30em) {
+
+    .notice {
+        width: 96%;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+    }
+
+    .notice a {
+        margin-left: 1rem;
+    }
+
+    .notice a span {
+        display: none;
+    }
 }
 
 /* 产品列表 */
@@ -378,7 +524,7 @@ header .main ul li a.active {
     width: 100%;
 }
 
-.product .product-content .item + .item {
+.product .product-content .item+.item {
     border-top: 1px solid #eee;
 }
 
@@ -464,6 +610,160 @@ header .main ul li a.active {
 .product .product-content .item .buy a.disabled {
     background-color: #ccc !important;
     cursor: not-allowed;
+}
+
+@media only screen and (max-width: 50em) {
+
+    .product h2 {
+        float: none;
+        width: 100%;
+        margin-top: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .product h2 em:first-child {
+        margin-top: 0;
+    }
+
+    .product h2 em {
+        display: inline;
+        font-size: 1.2rem;
+    }
+
+    .product .product-content {
+        float: none;
+        width: 100%;
+    }
+
+    .product .product-content .item h3 {
+        margin-bottom: 0
+    }
+
+    .product .product-content .item h3 em {
+        font-size: 2.4rem;
+    }
+
+    .product .product-content .item .info {
+        padding: 1rem 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .product .product-content .item .info p span {
+        font-size: 2rem;
+    }
+
+    .product .product-content .item .buy a {
+        margin: 0.5rem auto;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+
+    .product {
+        width: 96%;
+    }
+
+    .product h2 em:first-child:before {
+        content: " ";
+        display: table;
+    }
+
+    .product .product-content .item h3 em {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+
+    .product .product-content .item .info {
+        float: right;
+        width: 70%;
+        padding: 1rem 0;
+        border: none;
+    }
+
+    .product .product-content .item .info p span {
+        font-size: 1.8rem;
+    }
+
+    .product .product-content .item .buy {
+        clear: both;
+        float: none;
+        width: 100%;
+        padding: 1rem 0 2rem;
+    }
+
+    .product .product-content .item .buy a {
+        margin-top: 0;
+        max-width: 26rem;
+    }
+}
+/* 底部导航 */
+
+.footer {
+    padding: 3rem 0;
+    background-color: #fff;
+    border-top: 2px solid #eee;
+}
+
+.footer-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-content .brand {
+    float: left;
+    display: block;
+    filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 20%;
+    height: 35px;
+    background: url('../img/logo@1x.png') no-repeat left;
+    background-size: 150px 35px;
+}
+
+.footer-content ul {
+    float: left;
+    width: 15%;
+}
+
+.footer-content ul li {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.footer-content ul li.title {
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+@media only screen and (max-width: 50em) {
+
+    .footer-content .brand {
+        display: none;
+    }
+
+    .footer-content ul {
+        width: 20%;
+    }
+
+    .footer-content ul li {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .footer-content ul li.title {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    .footer-content {
+        width: 98%;
+    }
+
+    .footer-content ul li.title {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
 }
 /* 底部 */
 footer {
