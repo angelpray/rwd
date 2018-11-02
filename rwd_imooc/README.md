@@ -12,7 +12,7 @@
 
 3. 使用了工具样式，也就是类似Bootstrap中的`.pull-right`的样式（看到类名就能知道他的样式会怎么样），使用这种样式的好处在于非常快速方便让一个元素进行修饰，可重用。
 
-4. 使用了基于`JQ`的carousel，[Owl.carousel()](https://github.com/OwlCarousel2/OwlCarousel2).非常强大的carousel实现，支持触摸移动，还有其他选项可以对carousel进行自定义。类似的还有slick,lory,flickity.
+4. 使用了基于`JQ`的carousel，[Owl.carousel()](https://github.com/OwlCarousel2/OwlCarousel2).非常强大的carousel实现，支持触摸移动，还有其他选项可以对carousel进行自定义。类似的还有[slick](https://github.com/kenwheeler/slick),[lory](https://github.com/meandmax/lory),[flickity](https://github.com/metafizzy/flickity).
 
 5. 使用了CSS3的一些属性，比如CSS3的选择器，盒阴影，rgba等非常实用的东西。
 
