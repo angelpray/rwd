@@ -16,7 +16,7 @@
 
 5. 使用了CSS3的一些属性，比如CSS3的选择器，盒阴影，rgba等非常实用的东西。
 
-6. 使用了normalize.css，这种可以让网页在大多浏览器中看上去不会相差太多的开源样式表，相比reset.css是一种进步。
+6. 使用了[normalize.css](https://necolas.github.io/normalize.css/)，这种可以让网页在大多浏览器中看上去不会相差太多的开源样式表，相比reset.css是一种进步。
 
 7. 学会了响应式图片的实现原理，比如可以使用JS或者服务器实现，但在前端我们可以使用`picture + media媒体查询`来实现。
 
